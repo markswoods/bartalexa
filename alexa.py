@@ -56,12 +56,16 @@ class Alexa(Resource):
     def get(self):          
 
         return beers;
-        #payload = request.get_json()
+
+    def post(self):          
+        payload = request.get_json()
         
         # some debugging controls
         #print 'action: ' + payload['result']['action']        
         #print 'parameters: ' + json.dumps(payload['result']['parameters'])
-        #print json.dumps(payload, indent=4, separators=(',', ':'))
+        print json.dumps(payload, indent=4, separators=(',', ':'))
+
+        return
 
         #
         # Beer.List 
@@ -93,8 +97,6 @@ class Alexa(Resource):
                 # "contextOut": [],
                 "source": "bartender service"
             }
-
-    def post(self):          
 
         return beers;
 
