@@ -94,6 +94,9 @@ class Alexa(Resource):
                 "source": "bartender service"
             }
 
+    def post(self):          
+
+        return beers;
 
 api.add_resource(Alexa, '/alexa')
         
